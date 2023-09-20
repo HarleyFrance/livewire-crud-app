@@ -70,8 +70,6 @@
             <div class="mt-5">
                 {{ $students->links() }}
             </div>
-
-            @livewire('student.index')
         </div>
     </div>
 </div>

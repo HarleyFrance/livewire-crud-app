@@ -13,9 +13,7 @@ class Index extends Component
 
      public function render()
     {
-        $students = Student::where('name', 'LIKE', "%{$this->search}%")
-            ->paginate(10);
-
+        $students = Student::paginate(10);
         return view('livewire.student.index', [
             'students' => $students,
         ]);
