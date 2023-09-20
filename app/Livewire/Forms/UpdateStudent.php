@@ -16,8 +16,8 @@ class UpdateStudent extends Form
     #[Rule('required|email')]
     public $email;
 
-    #[Rule('required')]
-    public $section_id;
+    // #[Rule('required')]
+    // public $section_id;
 
     public function setStudent(Student $student)
     {
